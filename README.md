@@ -17,7 +17,7 @@ __2.__ Then, add Accordino as a dependency to your existing project.
 
 XML Usage
 -----
-All options in FontyConfiguration builder are optional. Use only those you really want to customize.
+All options builder are optional. Use only those you really want to customize.
 ```xml
 <com.fattorini.luca.android.accordini.view.Accordino
    xmlns:accordino="http://schemas.android.com/apk/res-auto"

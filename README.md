@@ -32,3 +32,42 @@ All options are optional. Use only those you really want to customize.
 
 Customization:
 -----
+You can setup an OnStateChangeListener in this way:
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+   ...
+   
+   firstAccordion = (Accordino) findViewById(R.id.first_accordino);
+   firstAccordion.setOnStateChangeListener(new OnStateChangeListener() {
+
+	   @Override
+	   public void onExpand(Accordino accordion) {
+		   // TODO Auto-generated method stub
+
+   	}
+
+	   @Override
+	   public void onCollapse(Accordino accordion) {
+	   	// TODO Auto-generated method stub
+	   }
+
+   });
+   
+   ...
+}
+```
+
+or... put custom Views as header and body of your GREAT ACCORDINO this way:
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+   ...
+   
+   firstAccordion = (Accordino) findViewById(R.id.first_accordino);
+   firstAccordion.setHeader(new View(this));
+   firstAccordion.setBody(new View(this));
+   
+   ...
+}
+```

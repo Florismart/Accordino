@@ -1,0 +1,11 @@
+<resources>
+
+    <declare-styleable name="Accordable">
+        <attr name="expandedResid" format="reference" />
+        <attr name="collapsedResid" format="reference" />
+        <attr name="expanded" format="boolean" />
+        <attr name="bodyView" format="reference" />
+        <attr name="headerView" format="reference" />
+    </declare-styleable>
+
+</resources>

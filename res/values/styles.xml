@@ -1,0 +1,45 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AccordinoImage">
+        <item name="android:layout_width">@dimen/accordino_icon_dimen</item>
+        <item name="android:layout_height">@dimen/accordino_icon_dimen</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Accordino">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/accordino_bkg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Accordino.Header">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">@dimen/accordino_small_padding</item>
+    </style>
+
+    <style name="Accordino.Header.Content">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Accordino.Body">
+        <item name="android:paddingLeft">@dimen/accordino_big_padding</item>
+        <item name="android:paddingRight">@dimen/accordino_big_padding</item>
+        <item name="android:paddingTop">@dimen/accordino_small_padding</item>
+        <item name="android:paddingBottom">@dimen/accordino_small_padding</item>
+    </style>
+
+    <style name="Accordino.Body.Content">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

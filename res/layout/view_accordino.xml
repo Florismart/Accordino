@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/accordinoView"
+    style="@style/Accordino" >
+
+    <LinearLayout
+        android:id="@+id/accordino_header"
+        style="@style/Accordino.Header" >
+
+        <ImageView
+            android:id="@+id/accordino_header_icon"
+            style="@style/AccordinoImage"
+            android:contentDescription="@string/accordino_content_indicator"
+            android:src="@drawable/accordino_expanded" />
+
+        <LinearLayout
+            android:id="@+id/accordino_header_content"
+            style="@style/Accordino.Header.Content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accordino_body"
+        style="@style/Accordino.Body"
+        android:layout_below="@+id/accordino_header" >
+
+        <LinearLayout
+            android:id="@+id/accordino_body_content"
+            style="@style/Accordino.Body.Content" />
+    </LinearLayout>
+
+</RelativeLayout>
